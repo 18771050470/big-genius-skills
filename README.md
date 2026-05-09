@@ -19,17 +19,15 @@
 
 ```
 big-genius-skills/
-├── README.md                                    # 本文件
-├── 单agent开发套件体系/
-│   └── templates/
-│       ├── SYSTEM_PROMPT_v2.txt                 # 系统提示词（v3.0）
-│       ├── AGENT_CORE_RULES_v2.txt              # 核心行为规则（v7.0）
-│       └── SKILL_REGISTRY.md                    # 技能注册表（v2.0）
-└── .trae/skills/                                # 完整技能目录（497+个）
-    ├── commander/                               # L0 指挥官层
-    ├── roles/                                   # L2 角色层（132个）
-    ├── thinking/                                # L1 思维层（356个）
-    └── tool/                                    # L3 工具层
+├── README.md                   # 本文件
+├── SYSTEM_PROMPT_v2.txt        # 系统提示词（v3.0）
+├── AGENT_CORE_RULES_v2.txt     # 核心行为规则（v7.0）
+├── SKILL_REGISTRY.md           # 技能注册表（v2.0）
+└── .trae/skills/               # 完整技能目录（497+个）
+    ├── commander/              # L0 指挥官层
+    ├── roles/                  # L2 角色层（132个）
+    ├── thinking/               # L1 思维层（356个）
+    └── tool/                   # L3 工具层
 ```
 
 ## 快速开始
@@ -72,9 +70,9 @@ Agent：Commander → 系统思维 → 后端架构师 → QA 工程师
 | 文件 | 说明 | 版本 |
 |------|------|------|
 | `.trae/skills/` | 完整技能目录（497+个Skill） | - |
-| `单agent开发套件体系/templates/SYSTEM_PROMPT_v2.txt` | 系统提示词（角色定位、交付物规范） | v3.0 |
-| `单agent开发套件体系/templates/AGENT_CORE_RULES_v2.txt` | 核心行为规则（简洁优先、验证闭环） | v7.0 |
-| `单agent开发套件体系/templates/SKILL_REGISTRY.md` | 技能注册表（触发条件、场景映射） | v2.0 |
+| `SYSTEM_PROMPT_v2.txt` | 系统提示词（角色定位、交付物规范） | v3.0 |
+| `AGENT_CORE_RULES_v2.txt` | 核心行为规则（简洁优先、验证闭环） | v7.0 |
+| `SKILL_REGISTRY.md` | 技能注册表（触发条件、场景映射） | v2.0 |
 
 ## 状态
 
