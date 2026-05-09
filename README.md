@@ -15,17 +15,33 @@
 
 **总计 497+ 个技能单元**，覆盖商业分析、全栈开发、AI 集成、嵌入式、合规风控等全链路场景。
 
+## 仓库结构
+
+```
+big-genius-skills/
+├── README.md                                    # 本文件
+├── 单agent开发套件体系/
+│   └── templates/
+│       ├── SYSTEM_PROMPT_v2.md                  # 系统提示词
+│       └── AGENT_CORE_RULES_v2.md               # 核心行为规则
+└── .trae/skills/                                # 完整技能目录
+    ├── commander/                               # L0 指挥官层
+    ├── roles/                                   # L2 角色层（132个）
+    ├── thinking/                                # L1 思维层（356个）
+    └── tool/                                    # L3 工具层
+```
+
 ## 快速开始
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/big-genius-skills.git
+git clone https://github.com/18771050470/big-genius-skills.git
 
 # 查看技能目录
-ls skills/
+ls .trae/skills/
 # ├── commander/          # 总指挥
-# ├── thinking/           # 思维模型
-# ├── roles/              # 专业角色
+# ├── roles/              # 132个专业角色
+# ├── thinking/           # 356个思维模型
 # └── tool/               # 工具技能
 ```
 
@@ -54,9 +70,12 @@ Agent：Commander → 系统思维 → 后端架构师 → QA 工程师
 
 | 文件 | 说明 |
 |------|------|
-| `AGENT_CORE_RULES_v2.txt` | 全局执行规则（简洁优先、验证闭环、范围纪律） |
-| `SYSTEM_PROMPT_v2.txt` | 系统提示词（角色定位、交付物规范、交互流程） |
-| `skills/` | 技能目录（按层级组织） |
+| `.trae/skills/commander/SKILL.md` | 总指挥 Skill，负责任务调度与编排 |
+| `.trae/skills/roles/` | 132 个角色 Skill（架构师/工程师/顾问等） |
+| `.trae/skills/thinking/` | 356 个思维模型 Skill（因果/系统/逆向等） |
+| `.trae/skills/tool/` | 工具层 Skill（文档/数据/浏览器等） |
+| `单agent开发套件体系/templates/SYSTEM_PROMPT_v2.md` | 系统提示词（角色定位、交付物规范） |
+| `单agent开发套件体系/templates/AGENT_CORE_RULES_v2.md` | 核心行为规则（简洁优先、验证闭环） |
 
 ## 状态
 
